@@ -1,4 +1,24 @@
+# -*- coding: utf-8 -*-
 
+random_memory_space = 8
+
+print("The content of \"random memory space\" variable is  \"" + str(random_memory_space) + "\"")
+
+addition_result = random_memory_space + 20
+
+print("The content of the variable added by 20 is \"" + str(addition_result) + "\"")
+
+## can you make a variable "your name"
+# and then assign it an integer of 15
+## add the variable division by 3 and store the output result into
+# a new variable "division output"
+
+
+
+
+
+aString_Example = "inchan"
+print(aString_Example[1])
 ##A list is a collection of ordered elements that can hold multiple values in a single variable.
 #Lists are widely used in programming and data structures due to their flexibility and ease of manipulation.
 bicycles = ['trek', 'cannondale', 'redline', 'specialized', 'Dragon']
