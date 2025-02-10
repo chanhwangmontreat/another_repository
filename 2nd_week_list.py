@@ -8,6 +8,16 @@ addition_result = random_memory_space + 20
 
 print("The content of the variable added by 20 is \"" + str(addition_result) + "\"")
 
+print("The datatype for 'random memory space ' is " + str(type(random_memory_space)))
+random_memory_space = 45.33
+print("The datatype for 'random memory space ' is " + str(type(random_memory_space)))
+
+random_memory_space = "Any English Text"
+print("The datatype for 'random memory space ' is " + str(type(random_memory_space)))
+
+print("The content of the variable added by 20 is " + str(addition_result))
+
+print(addition_result)
 ## can you make a variable "your name"
 # and then assign it an integer of 15
 ## add the variable division by 3 and store the output result into
@@ -18,19 +28,19 @@ print("The content of the variable added by 20 is \"" + str(addition_result) + "
 
 
 aString_Example = "inchan"
-print(aString_Example[1])
+print("I just picked up An element in a list '" + aString_Example[-2] + "'")
 ##A list is a collection of ordered elements that can hold multiple values in a single variable.
 #Lists are widely used in programming and data structures due to their flexibility and ease of manipulation.
 bicycles = ['trek', 'cannondale', 'redline', 'specialized', 'Dragon']
 print(bicycles)
 
-print(bicycles[0].title())
+print("If you use title() then 1st char is capitalized " +bicycles[0].title())
 
 ## 2nd eleement
 print(bicycles[1])
 print(bicycles[3])
 ## Can you display 5th element?
-
+print(bicycles[4])
 
 
 
@@ -39,38 +49,56 @@ bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 message = f"My first bicycle was a {bicycles[0].title()}."
 print(message)
 # can you write a calculation inside the string?
+country_of_birth = ["USA","Japan","Korea"]
+# message = "My country of Birth is " + country_of_birth[1]
+message = f'My country of Birth is {country_of_birth[1]}'
+print(message)
+
+print("'My country of Birth is " + country_of_birth[1])
 
 ### replace an element with another one
 motorcycles = ['honda', 'yamaha', 'suzuki']
+# print(motorcycles)
+# motorcycles[0] = 'ducati'
 print(motorcycles)
-motorcycles[0] = 'ducati'
+motorcycles[1] = "Ford"
+
 print(motorcycles)
+## can you replace 3rd element with "Subaru'?
+motorcycles[2] = "Subaru"
 
-## can you replace 3rd element with "Ford'?
-
-
+print(motorcycles)
 ## Add element
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
 motorcycles.append('ducati')
+print("List element was added")
 print(motorcycles)
 ## Can you add another element "RAM"?
+motorcycles.append("RAM")
+print("'RAM' element was added")
+print(motorcycles)
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
 motorcycles.insert(0, 'ducati')
-print(motorcycles)
+print("New list 'ducati' was added in the beginning !"  + str(motorcycles))
 ## Can you insert an element "Lamborghini" in the 3rd index?
+motorcycles.insert(2, "Lamborghini")
+
+print(f"I just added a new element in the 3rd index \"{motorcycles[2]}\"")
+
+
 
 
 ### removing an element
 motorcycles = ['honda', 'yamaha', 'suzuki']
-print(motorcycles)
+print(f"Source list is : \"{motorcycles}\"")
 del motorcycles[0]
-print(motorcycles)
+print(f"after the 1st element was removed: \"{motorcycles}\"")
 
 ## can you remove the last element?
-
-
+del motorcycles[-1]
+print(f"after the last element was removed: \"{motorcycles}\"")
 ### pops out the last element and return the last element
 motorcycles=['honda', 'yamaha', 'suzuki']
 print(motorcycles)
@@ -87,8 +115,8 @@ print(motorcycles)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
 
 ### can you remove "yamaha" element?
-
-
+motorcycles.remove('yamaha')
+print(f"\n Yes~ I removed 'Yamaha!!'  Here is the new list '{motorcycles}' ")
 
 
 #Sorted data allows for faster searching algorithms, such as Binary Search,
